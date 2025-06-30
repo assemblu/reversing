@@ -1,0 +1,26 @@
+﻿  Building 'driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Release\driver.inf
+  Stamping [Version] section with DriverVer=07/01/2025,1.30.4.801
+  Device.c
+  Driver.c
+  Queue.c
+  Generating Code...
+  driver.vcxproj -> C:\dev\reversing\cs2-external-esp\driver\x64\Release\driver.sys
+  Done Adding Additional Store
+  Successfully signed: C:\dev\reversing\cs2-external-esp\driver\x64\Release\driver.sys
+  
+  Driver is 'Universal'.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\dev\reversing\cs2-external-esp\driver\x64\Release\driver\driver.cat
+  Done Adding Additional Store
+  Successfully signed: C:\dev\reversing\cs2-external-esp\driver\x64\Release\driver\driver.cat
+  

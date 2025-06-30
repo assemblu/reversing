@@ -1,0 +1,21 @@
+﻿  Building 'driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\driver.inf
+  Stamping [Version] section with DriverVer=07/01/2025,1.2.45.98
+  Device.c
+  Driver.c
+  Queue.c
+  Generating Code...
+  driver.vcxproj -> C:\dev\reversing\driver\x64\Debug\driver.sys
+  Done Adding Additional Store
+  Successfully signed: C:\dev\reversing\driver\x64\Debug\driver.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test failed.
+  
+  Errors:
+  22.9.7: DriverVer set to a date in the future (postdated DriverVer not allowed) in driver\driver.inf.
+  
+  Warnings:
+  None
+x64\Debug\inf2catOutput.log : Inf2Cat error -2: "Inf2Cat, signability test failed." Double click to see the tool output.
