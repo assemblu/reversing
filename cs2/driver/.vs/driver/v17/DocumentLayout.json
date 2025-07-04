@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\dev\\reversing\\cs2-external-esp\\driver\\",
+  "WorkspaceRootPath": "C:\\dev\\reversing\\cs2\\driver\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dev\\reversing\\cs2-external-esp\\driver\\x64\\Release\\inf2catOutput.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dev\\reversing\\cs2\\driver\\x64\\Release\\inf2catOutput.log||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x64\\Release\\inf2catOutput.log||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB18DB24-CE1E-9274-3B87-58455650E58E}|driver.vcxproj|C:\\dev\\reversing\\cs2-external-esp\\driver\\driver.inf||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{BB18DB24-CE1E-9274-3B87-58455650E58E}|driver.vcxproj|C:\\dev\\reversing\\cs2\\driver\\driver.inf||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{BB18DB24-CE1E-9274-3B87-58455650E58E}|driver.vcxproj|solutionrelative:driver.inf||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB18DB24-CE1E-9274-3B87-58455650E58E}|driver.vcxproj|C:\\dev\\reversing\\cs2-external-esp\\driver\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{BB18DB24-CE1E-9274-3B87-58455650E58E}|driver.vcxproj|C:\\dev\\reversing\\cs2\\driver\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{BB18DB24-CE1E-9274-3B87-58455650E58E}|driver.vcxproj|solutionrelative:ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "driver.inf",
-              "DocumentMoniker": "C:\\dev\\reversing\\cs2-external-esp\\driver\\driver.inf",
+              "DocumentMoniker": "C:\\dev\\reversing\\cs2\\driver\\driver.inf",
               "RelativeDocumentMoniker": "driver.inf",
-              "ToolTip": "C:\\dev\\reversing\\cs2-external-esp\\driver\\driver.inf",
+              "ToolTip": "C:\\dev\\reversing\\cs2\\driver\\driver.inf",
               "RelativeToolTip": "driver.inf",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002933|",
@@ -40,9 +40,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "inf2catOutput.log",
-              "DocumentMoniker": "C:\\dev\\reversing\\cs2-external-esp\\driver\\x64\\Release\\inf2catOutput.log",
+              "DocumentMoniker": "C:\\dev\\reversing\\cs2\\driver\\x64\\Release\\inf2catOutput.log",
               "RelativeDocumentMoniker": "x64\\Release\\inf2catOutput.log",
-              "ToolTip": "C:\\dev\\reversing\\cs2-external-esp\\driver\\x64\\Release\\inf2catOutput.log",
+              "ToolTip": "C:\\dev\\reversing\\cs2\\driver\\x64\\Release\\inf2catOutput.log",
               "RelativeToolTip": "x64\\Release\\inf2catOutput.log",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -53,9 +53,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ReadMe.txt",
-              "DocumentMoniker": "C:\\dev\\reversing\\cs2-external-esp\\driver\\ReadMe.txt",
+              "DocumentMoniker": "C:\\dev\\reversing\\cs2\\driver\\ReadMe.txt",
               "RelativeDocumentMoniker": "ReadMe.txt",
-              "ToolTip": "C:\\dev\\reversing\\cs2-external-esp\\driver\\ReadMe.txt",
+              "ToolTip": "C:\\dev\\reversing\\cs2\\driver\\ReadMe.txt",
               "RelativeToolTip": "ReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",

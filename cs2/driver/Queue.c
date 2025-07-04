@@ -16,6 +16,23 @@ Environment:
 
 #include "driver.h"
 #include "queue.tmh"
+#include <wdf.h>
+
+// Forward declare PsLookupProcessByProcessId to resolve the undefined error
+NTSTATUS PsLookupProcessByProcessId(
+    HANDLE ProcessId,
+    PEPROCESS *Process
+);
+
+NTSTATUS MmCopyVirtualMemory(
+    PEPROCESS SourceProcess,
+    PVOID SourceAddress,
+    PEPROCESS TargetProcess,
+    PVOID TargetAddress,
+    SIZE_T BufferSize,
+    KPROCESSOR_MODE PreviousMode,
+    PSIZE_T ReturnSize
+);
 
 #ifdef ALLOC_PRAGMA
 #pragma alloc_text (PAGE, driverQueueInitialize)
@@ -88,38 +105,44 @@ driverEvtIoDeviceControl(
     _In_ size_t InputBufferLength,
     _In_ ULONG IoControlCode
     )
-/*++
-
-Routine Description:
-
-    This event is invoked when the framework receives IRP_MJ_DEVICE_CONTROL request.
-
-Arguments:
-
-    Queue -  Handle to the framework queue object that is associated with the
-             I/O request.
-
-    Request - Handle to a framework request object.
-
-    OutputBufferLength - Size of the output buffer in bytes
-
-    InputBufferLength - Size of the input buffer in bytes
-
-    IoControlCode - I/O control code.
-
-Return Value:
-
-    VOID
-
---*/
 {
-    TraceEvents(TRACE_LEVEL_INFORMATION, 
-                TRACE_QUEUE, 
-                "%!FUNC! Queue 0x%p, Request 0x%p OutputBufferLength %d InputBufferLength %d IoControlCode %d", 
-                Queue, Request, (int) OutputBufferLength, (int) InputBufferLength, IoControlCode);
+    UNREFERENCED_PARAMETER(Queue);
+    UNREFERENCED_PARAMETER(OutputBufferLength);
+    UNREFERENCED_PARAMETER(InputBufferLength);
+
+    if (IoControlCode == IOCTL_READ_PROCESS_MEMORY) {
+        PKERNEL_READ_REQUEST readRequest;
+        size_t inBufferSize;
+        NTSTATUS status = WdfRequestRetrieveInputBuffer(Request, sizeof(KERNEL_READ_REQUEST), (PVOID*)&readRequest, &inBufferSize);
+        if (NT_SUCCESS(status)) {
+            PVOID outBuffer;
+            size_t outBufferSize;
+            status = WdfRequestRetrieveOutputBuffer(Request, readRequest->Size, &outBuffer, &outBufferSize);
+            if (NT_SUCCESS(status)) {
+                PEPROCESS targetProcess = NULL;
+                SIZE_T bytesRead = 0;
+                status = PsLookupProcessByProcessId((HANDLE)readRequest->ProcessId, &targetProcess);
+                if (NT_SUCCESS(status)) {
+                    status = MmCopyVirtualMemory(
+                        targetProcess,
+                        (PVOID)readRequest->Address,
+                        PsGetCurrentProcess(),
+                        outBuffer,
+                        readRequest->Size,
+                        KernelMode,
+                        &bytesRead
+                    );
+                    ObDereferenceObject(targetProcess);
+                    WdfRequestCompleteWithInformation(Request, status, bytesRead);
+                    return;
+                }
+            }
+        }
+        WdfRequestComplete(Request, status);
+        return;
+    }
 
     WdfRequestComplete(Request, STATUS_SUCCESS);
-
     return;
 }
 

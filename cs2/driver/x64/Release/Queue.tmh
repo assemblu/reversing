@@ -1,4 +1,4 @@
-// e247083073cb6ea2c0b6622c5f0765fb Generated file. Do not edit.
+// e1807c98563f008a08410d553d9821a7 Generated file. Do not edit.
 // File created by WPP compiler version 10.0.26100
 // from template km-default.tpl
 
@@ -540,13 +540,10 @@ extern "C" {
 #else // WPP_NO_ANNOTATIONS
 
 #ifdef WPP_PUBLIC_
-#define WPP_PUBLIC_ANNOT_Queue_c76
+#define WPP_PUBLIC_ANNOT_Queue_c93
 #endif
 #ifdef WPP_PUBLIC_
-#define WPP_PUBLIC_ANNOT_Queue_c116
-#endif
-#ifdef WPP_PUBLIC_
-#define WPP_PUBLIC_ANNOT_Queue_c155
+#define WPP_PUBLIC_ANNOT_Queue_c178
 #endif
 #ifdef WPP_EMIT_FUNC_NAME
 #define WPP_FUNC_NAME L" FUNC=" _WPPW(__FUNCTION__)
@@ -555,7 +552,7 @@ extern "C" {
 #endif // WPP_EMIT_FUNC_NAME
 
 #ifdef WPP_USER_MSG_GUID
-# define WPP_ANNOTATE_Queue_c76_FINAL(P, File, Name, ...) __annotation( \
+# define WPP_ANNOTATE_Queue_c93_FINAL(P, File, Name, ...) __annotation( \
     L ## P, \
     WPP_GUID_WTEXT WPP_USER_MSG_GUID L"driver // SRC=" _WPPW(File) \
     L" MJ= MN=", \
@@ -564,9 +561,9 @@ extern "C" {
     WPP_FUNC_NAME, \
     __VA_ARGS__)
 #else // WPP_USER_MSG_GUID
-# define WPP_ANNOTATE_Queue_c76_FINAL(P, File, Name, ...) __annotation( \
+# define WPP_ANNOTATE_Queue_c93_FINAL(P, File, Name, ...) __annotation( \
     L ## P, \
-    L"ad66d4b3-568b-3760-63f4-65767db3b49e driver // SRC=" _WPPW(File) \
+    L"040e8acb-2829-315a-6992-7bf3c3c5e5a5 driver // SRC=" _WPPW(File) \
     L" MJ= MN=", \
     L"#typev " _WPPW(Name) \
     L" 10 \"%0WdfIoQueueCreate failed %10!s!\" //   LEVEL=TRACE_LEVEL_ERROR FLAGS=TRACE_QUEUE" \
@@ -574,8 +571,8 @@ extern "C" {
     __VA_ARGS__)
 #endif // WPP_USER_MSG_GUID
 
-#ifdef WPP_PUBLIC_ANNOT_Queue_c76
-# define WPP_ANNOTATE_Queue_c76 WPP_ANNOTATE_Queue_c76_FINAL( \
+#ifdef WPP_PUBLIC_ANNOT_Queue_c93
+# define WPP_ANNOTATE_Queue_c93 WPP_ANNOTATE_Queue_c93_FINAL( \
     "TMF:", \
     "Unknown_cxx00", \
     "Unknown_cxx00", \
@@ -586,88 +583,38 @@ extern "C" {
 # ifndef WPP_PUBLIC_TMC
 #  define WPP_PUBLIC_TMC // Adds "PUBLIC_TMF:" to the control guid annotation
 # endif
-#else // WPP_PUBLIC_ANNOT_Queue_c76
-# define WPP_ANNOTATE_Queue_c76 WPP_ANNOTATE_Queue_c76_FINAL( \
+#else // WPP_PUBLIC_ANNOT_Queue_c93
+# define WPP_ANNOTATE_Queue_c93 WPP_ANNOTATE_Queue_c93_FINAL( \
     "TMF:", \
     "Queue.c", \
-    "Queue_c76", \
+    "Queue_c93", \
     L"{", \
     L"status, ItemNTSTATUS -- 10" , \
     L"}")
-#endif // WPP_PUBLIC_ANNOT_Queue_c76
+#endif // WPP_PUBLIC_ANNOT_Queue_c93
 
 #ifdef WPP_USER_MSG_GUID
-# define WPP_ANNOTATE_Queue_c116_FINAL(P, File, Name, ...) __annotation( \
+# define WPP_ANNOTATE_Queue_c178_FINAL(P, File, Name, ...) __annotation( \
     L ## P, \
     WPP_GUID_WTEXT WPP_USER_MSG_GUID L"driver // SRC=" _WPPW(File) \
     L" MJ= MN=", \
     L"#typev " _WPPW(Name) \
-    L" 11 \"%0%!FUNC! Queue 0x%10!p!, Request 0x%11!p! OutputBufferLength %12!d! InputBufferLength %13!d! IoControlCode %14!d!\" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=TRACE_QUEUE" \
+    L" 11 \"%0%!FUNC! Queue 0x%10!p!, Request 0x%11!p! ActionFlags %12!d!\" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=TRACE_QUEUE" \
     WPP_FUNC_NAME, \
     __VA_ARGS__)
 #else // WPP_USER_MSG_GUID
-# define WPP_ANNOTATE_Queue_c116_FINAL(P, File, Name, ...) __annotation( \
+# define WPP_ANNOTATE_Queue_c178_FINAL(P, File, Name, ...) __annotation( \
     L ## P, \
-    L"ad66d4b3-568b-3760-63f4-65767db3b49e driver // SRC=" _WPPW(File) \
+    L"040e8acb-2829-315a-6992-7bf3c3c5e5a5 driver // SRC=" _WPPW(File) \
     L" MJ= MN=", \
     L"#typev " _WPPW(Name) \
-    L" 11 \"%0%!FUNC! Queue 0x%10!p!, Request 0x%11!p! OutputBufferLength %12!d! InputBufferLength %13!d! IoControlCode %14!d!\" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=TRACE_QUEUE" \
+    L" 11 \"%0%!FUNC! Queue 0x%10!p!, Request 0x%11!p! ActionFlags %12!d!\" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=TRACE_QUEUE" \
     WPP_FUNC_NAME, \
     __VA_ARGS__)
 #endif // WPP_USER_MSG_GUID
 
-#ifdef WPP_PUBLIC_ANNOT_Queue_c116
-# define WPP_ANNOTATE_Queue_c116 WPP_ANNOTATE_Queue_c116_FINAL( \
-    "TMF:", \
-    "Unknown_cxx00", \
-    "Unknown_cxx00", \
-    L"{", \
-    L"Arg, ItemPtr -- 10" , \
-    L"Arg, ItemPtr -- 11" , \
-    L"Arg, ItemLong -- 12" , \
-    L"Arg, ItemLong -- 13" , \
-    L"Arg, ItemLong -- 14" , \
-    L"}", \
-    L"PUBLIC_TMF:")
-# ifndef WPP_PUBLIC_TMC
-#  define WPP_PUBLIC_TMC // Adds "PUBLIC_TMF:" to the control guid annotation
-# endif
-#else // WPP_PUBLIC_ANNOT_Queue_c116
-# define WPP_ANNOTATE_Queue_c116 WPP_ANNOTATE_Queue_c116_FINAL( \
-    "TMF:", \
-    "Queue.c", \
-    "Queue_c116", \
-    L"{", \
-    L"Queue, ItemPtr -- 10" , \
-    L"Request, ItemPtr -- 11" , \
-    L"(int) OutputBufferLength, ItemLong -- 12" , \
-    L"(int) InputBufferLength, ItemLong -- 13" , \
-    L"IoControlCode, ItemLong -- 14" , \
-    L"}")
-#endif // WPP_PUBLIC_ANNOT_Queue_c116
-
-#ifdef WPP_USER_MSG_GUID
-# define WPP_ANNOTATE_Queue_c155_FINAL(P, File, Name, ...) __annotation( \
-    L ## P, \
-    WPP_GUID_WTEXT WPP_USER_MSG_GUID L"driver // SRC=" _WPPW(File) \
-    L" MJ= MN=", \
-    L"#typev " _WPPW(Name) \
-    L" 12 \"%0%!FUNC! Queue 0x%10!p!, Request 0x%11!p! ActionFlags %12!d!\" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=TRACE_QUEUE" \
-    WPP_FUNC_NAME, \
-    __VA_ARGS__)
-#else // WPP_USER_MSG_GUID
-# define WPP_ANNOTATE_Queue_c155_FINAL(P, File, Name, ...) __annotation( \
-    L ## P, \
-    L"ad66d4b3-568b-3760-63f4-65767db3b49e driver // SRC=" _WPPW(File) \
-    L" MJ= MN=", \
-    L"#typev " _WPPW(Name) \
-    L" 12 \"%0%!FUNC! Queue 0x%10!p!, Request 0x%11!p! ActionFlags %12!d!\" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=TRACE_QUEUE" \
-    WPP_FUNC_NAME, \
-    __VA_ARGS__)
-#endif // WPP_USER_MSG_GUID
-
-#ifdef WPP_PUBLIC_ANNOT_Queue_c155
-# define WPP_ANNOTATE_Queue_c155 WPP_ANNOTATE_Queue_c155_FINAL( \
+#ifdef WPP_PUBLIC_ANNOT_Queue_c178
+# define WPP_ANNOTATE_Queue_c178 WPP_ANNOTATE_Queue_c178_FINAL( \
     "TMF:", \
     "Unknown_cxx00", \
     "Unknown_cxx00", \
@@ -680,17 +627,17 @@ extern "C" {
 # ifndef WPP_PUBLIC_TMC
 #  define WPP_PUBLIC_TMC // Adds "PUBLIC_TMF:" to the control guid annotation
 # endif
-#else // WPP_PUBLIC_ANNOT_Queue_c155
-# define WPP_ANNOTATE_Queue_c155 WPP_ANNOTATE_Queue_c155_FINAL( \
+#else // WPP_PUBLIC_ANNOT_Queue_c178
+# define WPP_ANNOTATE_Queue_c178 WPP_ANNOTATE_Queue_c178_FINAL( \
     "TMF:", \
     "Queue.c", \
-    "Queue_c155", \
+    "Queue_c178", \
     L"{", \
     L"Queue, ItemPtr -- 10" , \
     L"Request, ItemPtr -- 11" , \
     L"ActionFlags, ItemLong -- 12" , \
     L"}")
-#endif // WPP_PUBLIC_ANNOT_Queue_c155
+#endif // WPP_PUBLIC_ANNOT_Queue_c178
 
 # define WPP_ANNOTATE(x) WPP_ANNOTATE_ ## x,
 
@@ -708,8 +655,8 @@ WPP_LOCAL_MSG_GUID(WPP_USER_MSG_GUID);
 
 #else // WPP_USER_MSG_GUID
 
-#define WPP_LOCAL_TraceGuids WPP_ad66d4b3568b376063f465767db3b49e_Traceguids
-extern const __declspec(selectany) GUID WPP_LOCAL_TraceGuids[] = { {0xad66d4b3,0x568b,0x3760,{0x63,0xf4,0x65,0x76,0x7d,0xb3,0xb4,0x9e}}, };
+#define WPP_LOCAL_TraceGuids WPP_040e8acb2829315a69927bf3c3c5e5a5_Traceguids
+extern const __declspec(selectany) GUID WPP_LOCAL_TraceGuids[] = { {0x040e8acb,0x2829,0x315a,{0x69,0x92,0x7b,0xf3,0xc3,0xc5,0xe5,0xa5}}, };
 
 #endif // WPP_USER_MSG_GUID
 
@@ -1043,88 +990,6 @@ WPP_RECORDER_SF_qqd(
 
 #endif // ENABLE_WPP_RECORDER
 
-#ifndef WPP_SF_qqddd_def
-# define WPP_SF_qqddd_def
-WPP_INLINE void WPP_SF_qqddd(WPP_LOGGER_ARG unsigned short id, LPCGUID TraceGuid, const void* _a1, const void* _a2, signed int _a3, signed int _a4, signed int _a5)
-{ WPP_TRACE(WPP_GET_LOGGER, WPP_TRACE_OPTIONS, (LPGUID)TraceGuid, id, WPP_LOGTYPEVAL(const void*, _a1) WPP_LOGTYPEVAL(const void*, _a2) WPP_LOGTYPEVAL(signed int, _a3) WPP_LOGTYPEVAL(signed int, _a4) WPP_LOGTYPEVAL(signed int, _a5)  (void*)0); }
-#endif // WPP_SF_qqddd_def
-
-#if ENABLE_WPP_RECORDER
-
-#if ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-
-//
-// Generate the WPP_RECORDER_AND_TRACE_SF_qqddd function
-//
-#ifndef WPP_RECORDER_AND_TRACE_SF_qqddd_def
-#define WPP_RECORDER_AND_TRACE_SF_qqddd_def
-WPP_INLINE
-VOID
-WPP_RECORDER_AND_TRACE_SF_qqddd(
-    WPP_LOGGER_ARG
-    BOOLEAN  wppEnabled,
-    BOOLEAN  recorderEnabled,
-    PVOID    AutoLogContext,
-    UCHAR    level,
-    ULONG    flags,
-    USHORT   id,
-    LPCGUID  traceGuid
-    , const void* _a1, const void* _a2, signed int _a3, signed int _a4, signed int _a5
-    )
-{
-    if (wppEnabled)
-    {
-        WPP_TRACE( WPP_GET_LOGGER,
-                   WPP_TRACE_OPTIONS,
-                   (LPGUID)traceGuid,
-                   id,
-                   WPP_LOGTYPEVAL(const void*, _a1) WPP_LOGTYPEVAL(const void*, _a2) WPP_LOGTYPEVAL(signed int, _a3) WPP_LOGTYPEVAL(signed int, _a4) WPP_LOGTYPEVAL(signed int, _a5)  (void*)0);
-    }
-
-    if (recorderEnabled)
-    {
-        WPP_RECORDER( AutoLogContext, level, flags, (LPGUID) traceGuid, id, WPP_LOGTYPEVAL(const void*, _a1) WPP_LOGTYPEVAL(const void*, _a2) WPP_LOGTYPEVAL(signed int, _a3) WPP_LOGTYPEVAL(signed int, _a4) WPP_LOGTYPEVAL(signed int, _a5)  (void*)0 );
-    }
-}
-#endif // WPP_RECORDER_AND_TRACE_SF_qqddd_def
-
-#else  // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-
-//
-// Generate the WPP_RECORDER_SP_qqddd function
-//
-#ifndef WPP_RECORDER_SF_qqddd_def
-#define WPP_RECORDER_SF_qqddd_def
-WPP_INLINE
-VOID
-WPP_RECORDER_SF_qqddd(
-    PVOID    AutoLogContext,
-    UCHAR    level,
-    ULONG    flags,
-    USHORT   id,
-    LPCGUID  traceGuid
-    , const void* _a1, const void* _a2, signed int _a3, signed int _a4, signed int _a5
-    )
-{
-    if (WPP_ENABLE_FLAG_BIT(flags) &&
-        (WPP_CONTROL(flags).Level >= level))
-    {
-        WPP_TRACE(
-            WPP_CONTROL(flags).Logger,
-            WPP_TRACE_OPTIONS,
-            (LPGUID)traceGuid,
-            id,
-            WPP_LOGTYPEVAL(const void*, _a1) WPP_LOGTYPEVAL(const void*, _a2) WPP_LOGTYPEVAL(signed int, _a3) WPP_LOGTYPEVAL(signed int, _a4) WPP_LOGTYPEVAL(signed int, _a5)  (void*)0);
-    }
-
-    WPP_RECORDER(AutoLogContext, level, flags, (LPGUID) traceGuid, id, WPP_LOGTYPEVAL(const void*, _a1) WPP_LOGTYPEVAL(const void*, _a2) WPP_LOGTYPEVAL(signed int, _a3) WPP_LOGTYPEVAL(signed int, _a4) WPP_LOGTYPEVAL(signed int, _a5)  (void*)0);
-}
-#endif // WPP_RECORDER_SF_qqddd_def
-
-#endif // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-
-#endif // ENABLE_WPP_RECORDER
-
 // WPP_LOG_ALWAYS:
 // Called for each event: WPP_LOG_ALWAYS(EX, MSG, arg1, arg2, arg3...) Other()
 // If defined, the definition needs to include a trailing comma or semicolon.
@@ -1144,7 +1009,7 @@ WPP_RECORDER_SF_qqddd(
 #define WPP_INVOKE_WPP_DEBUG(MsgArgs) (void)0
 #endif // WPP_DEBUG
 
-// WPP_CALL_Queue_c76
+// WPP_CALL_Queue_c93
 #ifndef WPP_LEVEL_FLAGS_PRE
 #  define WPP_LEVEL_FLAGS_PRE(LEVEL,FLAGS)
 #endif
@@ -1153,11 +1018,11 @@ WPP_RECORDER_SF_qqddd(
 #endif
 #if ENABLE_WPP_RECORDER
 #if ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-#define WPP_CALL_Queue_c76(LEVEL, FLAGS, MSG, _a10) \
+#define WPP_CALL_Queue_c93(LEVEL, FLAGS, MSG, _a10) \
     WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10) \
     WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
     do {\
-        WPP_ANNOTATE(Queue_c76) 0; \
+        WPP_ANNOTATE(Queue_c93) 0; \
         BOOLEAN wppEnabled = WPP_CHECK_INIT WPP_LEVEL_FLAGS_ENABLED(LEVEL, FLAGS); \
         BOOLEAN recorderEnabled = WPP_RECORDER_CHECK_INIT WPP_RECORDER_LEVEL_FLAGS_FILTER(LEVEL, FLAGS); \
         if (wppEnabled || recorderEnabled) { \
@@ -1173,10 +1038,10 @@ WPP_RECORDER_SF_qqddd(
     while(0) \
     WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
 #else // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-#define WPP_CALL_Queue_c76(LEVEL, FLAGS, MSG, _a10) \
+#define WPP_CALL_Queue_c93(LEVEL, FLAGS, MSG, _a10) \
     WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10) \
     WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
-    WPP_ANNOTATE(Queue_c76) \
+    WPP_ANNOTATE(Queue_c93) \
     (( \
         WPP_RECORDER_CHECK_INIT WPP_RECORDER_LEVEL_FLAGS_FILTER(LEVEL, FLAGS) \
         ?   WPP_INVOKE_WPP_DEBUG((MSG, _a10)), \
@@ -1190,10 +1055,10 @@ WPP_RECORDER_SF_qqddd(
     WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
 #endif // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
 #else  // ENABLE_WPP_RECORDER
-#define WPP_CALL_Queue_c76(LEVEL, FLAGS, MSG, _a10) \
+#define WPP_CALL_Queue_c93(LEVEL, FLAGS, MSG, _a10) \
     WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10) \
     WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
-    WPP_ANNOTATE(Queue_c76) \
+    WPP_ANNOTATE(Queue_c93) \
     (( \
         WPP_CHECK_INIT WPP_LEVEL_FLAGS_ENABLED(LEVEL, FLAGS) \
         ?   WPP_INVOKE_WPP_DEBUG((MSG, _a10)), \
@@ -1207,7 +1072,7 @@ WPP_RECORDER_SF_qqddd(
     WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
 #endif // ENABLE_WPP_RECORDER
 
-// WPP_CALL_Queue_c116
+// WPP_CALL_Queue_c178
 #ifndef WPP_LEVEL_FLAGS_PRE
 #  define WPP_LEVEL_FLAGS_PRE(LEVEL,FLAGS)
 #endif
@@ -1216,74 +1081,11 @@ WPP_RECORDER_SF_qqddd(
 #endif
 #if ENABLE_WPP_RECORDER
 #if ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-#define WPP_CALL_Queue_c116(LEVEL, FLAGS, MSG, _a10, _a11, _a12, _a13, _a14) \
-    WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10, _a11, _a12, _a13, _a14) \
-    WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
-    do {\
-        WPP_ANNOTATE(Queue_c116) 0; \
-        BOOLEAN wppEnabled = WPP_CHECK_INIT WPP_LEVEL_FLAGS_ENABLED(LEVEL, FLAGS); \
-        BOOLEAN recorderEnabled = WPP_RECORDER_CHECK_INIT WPP_RECORDER_LEVEL_FLAGS_FILTER(LEVEL, FLAGS); \
-        if (wppEnabled || recorderEnabled) { \
-            WPP_INVOKE_WPP_DEBUG((MSG, _a10, _a11, _a12, _a13, _a14)); \
-            WPP_RECORDER_AND_TRACE_SF_qqddd( \
-                     WPP_LEVEL_FLAGS_LOGGER(LEVEL, FLAGS) \
-                     wppEnabled, recorderEnabled, \
-                     WPP_RECORDER_LEVEL_FLAGS_ARGS(LEVEL, FLAGS), \
-                     11, \
-                     WPP_LOCAL_TraceGuids+0, _a10, _a11, _a12, _a13, _a14);\
-        } \
-    } \
-    while(0) \
-    WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
-#else // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-#define WPP_CALL_Queue_c116(LEVEL, FLAGS, MSG, _a10, _a11, _a12, _a13, _a14) \
-    WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10, _a11, _a12, _a13, _a14) \
-    WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
-    WPP_ANNOTATE(Queue_c116) \
-    (( \
-        WPP_RECORDER_CHECK_INIT WPP_RECORDER_LEVEL_FLAGS_FILTER(LEVEL, FLAGS) \
-        ?   WPP_INVOKE_WPP_DEBUG((MSG, _a10, _a11, _a12, _a13, _a14)), \
-            WPP_RECORDER_SF_qqddd( \
-                WPP_RECORDER_LEVEL_FLAGS_ARGS(LEVEL, FLAGS), \
-                11, \
-                WPP_LOCAL_TraceGuids+0, _a10, _a11, _a12, _a13, _a14), \
-            1 \
-        :   0 \
-    )) \
-    WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
-#endif // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-#else  // ENABLE_WPP_RECORDER
-#define WPP_CALL_Queue_c116(LEVEL, FLAGS, MSG, _a10, _a11, _a12, _a13, _a14) \
-    WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10, _a11, _a12, _a13, _a14) \
-    WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
-    WPP_ANNOTATE(Queue_c116) \
-    (( \
-        WPP_CHECK_INIT WPP_LEVEL_FLAGS_ENABLED(LEVEL, FLAGS) \
-        ?   WPP_INVOKE_WPP_DEBUG((MSG, _a10, _a11, _a12, _a13, _a14)), \
-            WPP_SF_qqddd( \
-                WPP_LEVEL_FLAGS_LOGGER(LEVEL, FLAGS) \
-                11, \
-                WPP_LOCAL_TraceGuids+0, _a10, _a11, _a12, _a13, _a14), \
-            1 \
-        :   0 \
-    )) \
-    WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
-#endif // ENABLE_WPP_RECORDER
-
-// WPP_CALL_Queue_c155
-#ifndef WPP_LEVEL_FLAGS_PRE
-#  define WPP_LEVEL_FLAGS_PRE(LEVEL,FLAGS)
-#endif
-#ifndef WPP_LEVEL_FLAGS_POST
-#  define WPP_LEVEL_FLAGS_POST(LEVEL,FLAGS)
-#endif
-#if ENABLE_WPP_RECORDER
-#if ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-#define WPP_CALL_Queue_c155(LEVEL, FLAGS, MSG, _a10, _a11, _a12) \
+#define WPP_CALL_Queue_c178(LEVEL, FLAGS, MSG, _a10, _a11, _a12) \
     WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10, _a11, _a12) \
     WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
     do {\
-        WPP_ANNOTATE(Queue_c155) 0; \
+        WPP_ANNOTATE(Queue_c178) 0; \
         BOOLEAN wppEnabled = WPP_CHECK_INIT WPP_LEVEL_FLAGS_ENABLED(LEVEL, FLAGS); \
         BOOLEAN recorderEnabled = WPP_RECORDER_CHECK_INIT WPP_RECORDER_LEVEL_FLAGS_FILTER(LEVEL, FLAGS); \
         if (wppEnabled || recorderEnabled) { \
@@ -1292,23 +1094,23 @@ WPP_RECORDER_SF_qqddd(
                      WPP_LEVEL_FLAGS_LOGGER(LEVEL, FLAGS) \
                      wppEnabled, recorderEnabled, \
                      WPP_RECORDER_LEVEL_FLAGS_ARGS(LEVEL, FLAGS), \
-                     12, \
+                     11, \
                      WPP_LOCAL_TraceGuids+0, _a10, _a11, _a12);\
         } \
     } \
     while(0) \
     WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
 #else // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
-#define WPP_CALL_Queue_c155(LEVEL, FLAGS, MSG, _a10, _a11, _a12) \
+#define WPP_CALL_Queue_c178(LEVEL, FLAGS, MSG, _a10, _a11, _a12) \
     WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10, _a11, _a12) \
     WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
-    WPP_ANNOTATE(Queue_c155) \
+    WPP_ANNOTATE(Queue_c178) \
     (( \
         WPP_RECORDER_CHECK_INIT WPP_RECORDER_LEVEL_FLAGS_FILTER(LEVEL, FLAGS) \
         ?   WPP_INVOKE_WPP_DEBUG((MSG, _a10, _a11, _a12)), \
             WPP_RECORDER_SF_qqd( \
                 WPP_RECORDER_LEVEL_FLAGS_ARGS(LEVEL, FLAGS), \
-                12, \
+                11, \
                 WPP_LOCAL_TraceGuids+0, _a10, _a11, _a12), \
             1 \
         :   0 \
@@ -1316,16 +1118,16 @@ WPP_RECORDER_SF_qqddd(
     WPP_LEVEL_FLAGS_POST(LEVEL, FLAGS)
 #endif // ENABLE_WPP_TRACE_FILTERING_WITH_WPP_RECORDER
 #else  // ENABLE_WPP_RECORDER
-#define WPP_CALL_Queue_c155(LEVEL, FLAGS, MSG, _a10, _a11, _a12) \
+#define WPP_CALL_Queue_c178(LEVEL, FLAGS, MSG, _a10, _a11, _a12) \
     WPP_LOG_ALWAYS(WPP_EX_LEVEL_FLAGS(LEVEL, FLAGS), MSG, _a10, _a11, _a12) \
     WPP_LEVEL_FLAGS_PRE(LEVEL, FLAGS) \
-    WPP_ANNOTATE(Queue_c155) \
+    WPP_ANNOTATE(Queue_c178) \
     (( \
         WPP_CHECK_INIT WPP_LEVEL_FLAGS_ENABLED(LEVEL, FLAGS) \
         ?   WPP_INVOKE_WPP_DEBUG((MSG, _a10, _a11, _a12)), \
             WPP_SF_qqd( \
                 WPP_LEVEL_FLAGS_LOGGER(LEVEL, FLAGS) \
-                12, \
+                11, \
                 WPP_LOCAL_TraceGuids+0, _a10, _a11, _a12), \
             1 \
         :   0 \

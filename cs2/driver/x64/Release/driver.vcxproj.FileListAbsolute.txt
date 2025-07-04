@@ -1,2 +1,3 @@
 C:\dev\reversing\driver\x64\Release\driver.sys
 C:\dev\reversing\cs2-external-esp\driver\x64\Release\driver.sys
+C:\dev\reversing\cs2\driver\x64\Release\driver.sys
